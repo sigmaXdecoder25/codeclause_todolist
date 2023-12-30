@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/light.jpg');
+    background-size: cover;
+    background-position: inherit;
+}
+
+
+/* Rest of your existing CSS styles... */
+
+.container {
+    max-width: 400px;
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color: #a59f9f;
+    padding: 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.5s ease-out;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3f1a1a;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c4c1c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #836363;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Dark Mode */
+
+body.dark-mode {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/dark.jpg');
+    background-size: cover;
+    background-position: inherit;
+}
+
+.container.dark-mode {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgb(179, 255, 86);
+}
+
+.theme-toggle.dark-mode label {
+    color: #fffefe;
+}
+
+
+/* Animations */
+
+button:hover,
+li:hover,
+.theme-toggle label:hover {
+    transform: scale(1.05);
+}
